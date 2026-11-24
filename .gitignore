@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Original exports and local backups; website models remain in public/models/
+assets/
+model-backups/
+source-assets/
+*.zip
+
+# Private local configuration
+.env
+.env.*
+!.env.example
+
+# Logs and editor/OS files
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,8 @@
+{
+  "name": "vclabs-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive showcase of the VCLabS team's Shapr3D laboratory assets",
+  "scripts": {"start": "node server.cjs", "test": "node tests.cjs"},
+  "dependencies": {"@google/model-viewer": "4.1.0"}
+}

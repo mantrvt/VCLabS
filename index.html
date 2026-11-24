@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VCLabS — Virtual Chemistry Lab Simulator</title>
+  <meta name="description" content="VCLabS is a 3D exploration game that teaches chemistry through guided experiments, apparatus exploration and quizzes.">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/node_modules/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="VCLabS home"><span class="brand-mark">V</span><span>VCLabS</span></a>
+    <nav><a href="#explore">Explore</a><a href="#learning">Learning loop</a><a href="#about">About</a></nav>
+    <a class="button button-small" href="#explore">Enter lab</a>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Virtual Chemistry Lab Simulator</p>
+        <h1>Learn chemistry by <em>doing</em>, not memorising.</h1>
+        <p class="lede">VCLabS is a 3D exploration game for secondary school students. Explore the lab, identify apparatus, follow experiments and test what you learned.</p>
+        <div class="hero-actions"><a class="button" href="#explore">Explore the lab <span>↗</span></a><a class="text-link" href="#about">How it works <span>↓</span></a></div>
+        <div class="stats"><div><strong>05</strong><span>lab spaces</span></div><div><strong>3D</strong><span>interactive world</span></div><div><strong>01</strong><span>learning loop</span></div></div>
+      </div>
+      <div class="hero-model"><div class="model-label"><span class="pulse"></span> Main lobby · 3D asset preview</div><div class="hero-preview"><span class="preview-grid"></span><span class="preview-title">Explore<br><em>the lab</em></span><span class="preview-orbit">↗</span></div><div class="model-hint">Select a room below to inspect it in 3D</div></div>
+    </section>
+
+    <section class="section shell" id="explore">
+      <div class="section-heading"><div><p class="eyebrow">Explore VCLabS</p><h2>Four rooms. One connected journey.</h2></div><p>Choose a room to inspect its 3D space. Every room is a step in the student’s journey from orientation to understanding.</p></div>
+      <div class="room-grid" id="room-grid"></div>
+      <div class="viewer-panel" id="viewer-panel" aria-live="polite">
+        <div class="viewer-header"><div><p class="eyebrow" id="viewer-kicker">Selected room</p><h3 id="viewer-title">Main Lobby</h3></div><div class="viewer-actions"><button id="reset-view" class="icon-button" type="button">Reset view</button><button id="fullscreen" class="icon-button" type="button">Fullscreen</button></div></div>
+        <div class="viewer-stage"><model-viewer id="room-viewer" alt="Selected VCLabS room" camera-controls touch-action="pan-y" shadow-intensity="0.8" exposure="1.1" environment-image="neutral" loading="lazy"></model-viewer><div class="viewer-status" id="viewer-status">Select a room to load its 3D model.</div></div>
+        <div class="viewer-description" id="viewer-description">The central navigation hub that connects students to every learning space.</div>
+      </div>
+    </section>
+
+    <section class="dark-section" id="learning"><div class="shell learning-layout"><div><p class="eyebrow">Designed as a learning loop</p><h2>Explore. Experiment. Reflect.</h2><p class="dark-copy">VCLabS turns a chemistry lesson into a guided 3D experience. Students build confidence through exploration, then use feedback to understand what happened.</p></div><ol class="steps"><li><span>01</span><div><h3>Get oriented</h3><p>The Tutorial Room introduces controls, safety and lab etiquette.</p></div></li><li><span>02</span><div><h3>Discover</h3><p>The Apparatus Room turns unfamiliar equipment into recognisable tools.</p></div></li><li><span>03</span><div><h3>Apply</h3><p>The Experiment Room guides students through a practical procedure.</p></div></li><li><span>04</span><div><h3>Check understanding</h3><p>The Quiz Room turns mistakes into useful feedback.</p></div></li></ol></div></section>
+
+    <section class="section shell split" id="about"><div><p class="eyebrow">The project</p><h2>A virtual space for safer, clearer chemistry learning.</h2></div><div class="about-copy"><p>Built by a student team, VCLabS combines 3D exploration with guided learning for secondary school students. It gives learners a place to practise the sequence of a simple experiment before applying that understanding in the real lab.</p><div class="callout"><strong>Portfolio focus</strong><span>Explore the 3D assets, then read the design decisions behind each room.</span></div></div></section>
+  </main>
+  <footer class="footer shell"><div class="brand"><span class="brand-mark">V</span><span>VCLabS</span></div><p>Virtual Chemistry Lab Simulator · 3D educational exploration</p><a href="#top">Back to top ↑</a></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
