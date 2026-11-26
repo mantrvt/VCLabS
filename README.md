@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/images/VCLabS.png" alt="VCLabS — Virtual Chemistry Lab Simulator" width="600">
+  <img src="./public/images/VCLabS.png" alt="VCLabS — Virtual Chemistry Lab Simulator" width="300">
 </p>
 
 # VCLabS — Virtual Chemistry Lab Simulator
