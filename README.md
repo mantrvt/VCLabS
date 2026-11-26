@@ -15,5 +15,3 @@ VCLabS is a 3D exploration game designed to help secondary school students learn
 This repository includes a browser-based 3D showcase of the VCLabS environments. Visitors can select rooms, rotate the models, zoom, pan, and open the viewer fullscreen.
 
 The showcase models were exported from Shapr3D in GLB format. This website presents the environments; it does not include the original game's playable experiments, movement system, or quiz scoring.
-
-GitHub hosts the repository, not this Node server. A separate deployment is needed for a public playable website.
