@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./public/images/VCLabS.png" alt="VCLabS — Virtual Chemistry Lab Simulator" width="800">
+</p>
+
 # VCLabS — Virtual Chemistry Lab Simulator
 
 VCLabS is a 3D exploration game designed to help secondary school students learn basic chemistry through exploration, guided experiments, apparatus discovery, tutorials, and quizzes.
